@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://krios2146.github.io/time-lock
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
