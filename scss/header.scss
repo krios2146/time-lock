@@ -1,0 +1,59 @@
+.header {
+    &-container {
+        max-width: 1620px;
+    }
+    &__inner {
+        min-height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__dropdown {
+        display: inline-block;
+        position: relative;
+    }
+    &__tickets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 190px;
+        background-color: var(--light-violet);
+        color: var(--dark-violet);
+        @include header;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+}
+
+.dropdown {
+    &__btn {
+        background-color: var(--violet-dark);
+        font-family: var(--font);
+        color: var(--text-dimmed);
+        padding: 10px 20px;
+        font-size: 30px;
+        border: 1px solid var(--text-dimmed);
+        border-radius: 10px;
+    }
+    &__content {
+        display: none;
+        position: absolute;
+        background-color: var(--dark-violet);
+        min-width: 160px;
+        z-index: 1;
+    }
+    &__variant {
+        background-color: var(--dark-violet);
+        color: var(--text);
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+    }
+    &:hover {
+        .dropdown__content {
+            display: block;
+        }
+    }
+  }

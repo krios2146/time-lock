@@ -1,0 +1,39 @@
+.search {
+    &__inner {
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__input {
+        background-color: var(--dark-violet);
+        border: 1px solid var(--text-dimmed);
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 590px;
+        font-size: 30px;
+        color: var(--text);
+        margin: 0 50px;
+        &::placeholder {
+            color: var(--text);
+            font-family: var(--font);
+        }
+    }
+    &__calendar {
+        background-color: var(--dark-violet);
+        border: 1px solid var(--text-dimmed);
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 30px;
+        color: var(--text);
+        margin: 0 50px;
+        &::placeholder {
+            color: var(--text);
+            font-family: var(--font);
+        }
+    }
+}
+::-webkit-calendar-picker-indicator {
+    background-color: var(--text-dimmed);
+    border-radius: 10px;
+}

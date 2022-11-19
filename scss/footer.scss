@@ -1,0 +1,33 @@
+.footer {
+    &-container {
+        max-width: 1320px;
+    }
+    &__inner {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        &-item {
+            @include header;
+            color: var(--text);
+            text-decoration: none;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icon {
+        margin: 0 5px;
+    }
+    &__link {
+        color: var(--text);
+        text-decoration: none;
+    }
+}

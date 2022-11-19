@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-violet: #100E1B;
+    --light-violet: #B767FF;
+    --text: #F5F4F5;
+    --text-dimmed: #f5f4f580;
+
+    --font: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--dark-violet);
+    color: var(--text);
+    font-family: var(--font);
+}
+
+.container {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+@mixin header {
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@import 'header.scss', 'poster.scss', 'search.scss', 'film-carousel.scss', 'events.scss', 'footer.scss';
